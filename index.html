@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tokkenly — Bank smarter. Build wealth.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+
+</head>
+<body>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:#ffffff}
+a{color:#12805f}a:hover{color:#0b3d31}
+.tk{font-family:'Geist',ui-sans-serif,system-ui,sans-serif;color:#141a18;-webkit-font-smoothing:antialiased}
+.tk *{box-sizing:border-box}
+.d{font-family:'Outfit',ui-sans-serif,system-ui,sans-serif}
+.mono{font-family:'Geist Mono',ui-monospace,monospace}
+.bar{max-width:1200px;width:calc(100% - 48px);margin:0 auto}
+.content{max-width:1080px;margin:0 auto}
+.h1{font-size:80px;line-height:1.25;letter-spacing:-0.03em;white-space:nowrap}
+.stage{height:860px;perspective:1400px}
+.phone{transform-origin:50% 0;transform:rotateX(0deg) scale(0.8333);animation:tk-straighten linear both;animation-timeline:scroll(root);animation-range:0 340px;backface-visibility:hidden}
+.phone > div{zoom:1.5}
+@keyframes tk-straighten{from{transform:rotateX(30deg) scale(1)}to{transform:rotateX(0deg) scale(0.8333)}}
+@media (prefers-reduced-motion:reduce){.phone{animation:none}}
+.ctas-sm{display:flex}
+
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.sec{padding:96px 0}
+.big{font-size:80px;line-height:1.04;letter-spacing:-0.035em;font-weight:800}
+.h2{font-size:48px;line-height:1.08;letter-spacing:-0.03em;font-weight:800}
+.h3{font-size:40px;line-height:1.08;letter-spacing:-0.025em;font-weight:700}
+.h3s{font-size:28px;line-height:1.15;letter-spacing:-0.02em;font-weight:700}
+.stack{font-size:40px;line-height:1.1;letter-spacing:-0.025em;font-weight:700}
+.lead{font-size:26px;line-height:1.35;font-weight:600;letter-spacing:-0.01em;color:#141a18;font-family:'Outfit',ui-sans-serif,system-ui,sans-serif}
+.body{font-size:18px;line-height:1.55;color:#5b6866}
+.panel{background:#f3f6f4;border-radius:32px}
+.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+.bento{min-height:500px}
+.ph > div{zoom:1}
+.how{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:64px;margin-top:24px}
+.how-steps > .step{min-height:520px;display:flex;align-items:center}
+.how-phone{position:sticky;top:150px;height:620px}
+.how-phone > .ph{position:absolute;inset:0;display:flex;justify-content:center;transition:opacity .45s ease,transform .45s ease}
+.step-phone{display:none}
+.steps3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:48px}
+.ph3 > div{zoom:0.9;box-shadow:none !important}
+.stack-xl{font-size:56px;line-height:1.05;letter-spacing:-0.03em;font-weight:800}
+.g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.h3m{font-size:30px;line-height:1.12;letter-spacing:-0.02em;font-weight:700}
+.bento3{min-height:540px}
+.g3 .cardviz{padding:20px !important}
+.g3 .cardviz > .mono{font-size:14px !important;letter-spacing:0.1em !important;left:20px !important;bottom:56px !important;white-space:nowrap}
+.cta{background:#03201a;border-radius:32px;color:#ffffff}
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;gap:16px;width:max-content;animation:tk-marquee 45s linear infinite}
+.track > div[aria-hidden]{gap:16px}
+@keyframes tk-marquee{to{transform:translateX(calc(-50% - 8px))}}
+.reveal{background:linear-gradient(90deg,#141a18 0 50%,#c9d2ce 50% 100%);background-size:200% 100%;background-position:100% 0;-webkit-background-clip:text;background-clip:text;color:transparent;animation:tk-reveal linear both;animation-timeline:view();animation-range:entry 30% cover 55%}
+@keyframes tk-reveal{to{background-position:0 0}}
+.topbar{position:relative;z-index:20}
+@media (prefers-reduced-motion:reduce){.track{animation:none}.reveal{animation:none;background-position:0 0}}
+@media (max-width:760px){
+.st-line{display:none !important}
+.st-num{display:block !important;margin-bottom:10px}
+.st-card > div:first-child{padding:28px 22px 24px !important}
+.st-vis{height:auto !important;padding:0 22px !important}
+.pflow{flex-wrap:nowrap !important;gap:6px !important}
+.pflow > span{font-size:14px !important;padding:8px 12px !important}
+.usacct{padding:40px 22px 28px !important}
+.usacct-h{font-size:32px !important}
+.usacct-card{padding:20px 18px 24px !important}
+.usacct-n{left:0 !important}
+.sendrow{grid-template-columns:minmax(0,1fr) !important;gap:16px !important}
+.send-photo{min-height:380px !important}
+.send-ph{height:340px !important}
+.send-card{padding:40px 24px 0 !important;min-height:0 !important}
+.send-h{font-size:32px !important}
+.send-stack{margin-left:24px !important;height:170px !important;margin-top:28px !important}
+.bills-peek{height:200px !important}
+.bills-panel{padding:32px 22px 0 !important}
+.bills-panel > div:first-child{padding-bottom:4px !important}
+.send-n{right:-24px !important;padding:16px !important}
+.send-n > span{width:44px !important;height:44px !important}
+.send-n .d{font-size:15px !important}
+.wrap{padding:0 20px}
+.sec{padding:64px 0}
+.big{font-size:38px;line-height:1.06}
+.h2{font-size:28px;line-height:1.15}
+.h3{font-size:24px;line-height:1.15}
+.h3s{font-size:20px}
+.stack{font-size:26px}
+.lead{font-size:19px}
+.body{font-size:15px}
+.panel{border-radius:24px}
+.g2,.split{grid-template-columns:minmax(0,1fr);gap:16px}
+.split{gap:32px}
+.panel.split{padding:32px 20px !important}
+.bento{min-height:0;padding:28px 22px !important}
+.g2 > .panel{padding:28px 22px !important}
+.path{padding:32px 22px !important}
+.stack-xl{font-size:36px}
+.every-ph{height:300px !important}
+.every-ph > .ph{height:300px !important}
+.peek{height:180px !important;margin:22px -22px -28px !important}
+.g3{grid-template-columns:minmax(0,1fr);gap:16px}
+.g4{grid-template-columns:minmax(0,1fr);gap:16px}
+.trustbox .g4{gap:28px}
+.trustbox{padding:36px 22px !important;border-radius:24px !important}
+.h3m{font-size:24px}
+.bento3{min-height:0;padding:28px 22px !important}
+.path li{font-size:15px !important}
+.ph > div{zoom:0.8}
+.phcol{padding:8px 0 20px}
+.fchip{font-size:12px !important;padding:8px 12px 8px 8px !important}
+.fchip > span{width:28px !important;height:28px !important}
+.fc-a{left:0 !important;right:auto !important;top:30px !important}
+.fc-b{right:0 !important;left:auto !important;bottom:30px !important}
+.fc-e1{left:0 !important;right:auto !important;top:-4px !important}
+.fc-e2{right:0 !important;left:auto !important;bottom:-4px !important}
+.stepx{font-size:18px !important}
+.fc-c{left:6px !important;bottom:-34px !important}
+.how{grid-template-columns:minmax(0,1fr);gap:0}
+.how-phone-col{display:none}
+.how-steps > .step{min-height:0;padding:28px 0}
+.how-steps p.body{margin-left:0 !important}
+.step-phone{display:flex;justify-content:center;margin-top:20px}
+.steps3{grid-template-columns:minmax(0,1fr);margin-top:28px;gap:16px}
+.step3{padding:28px 22px 0 !important}
+.stepph{height:300px !important}
+.ph3 > div{zoom:0.8}
+.cardviz{width:300px !important;padding:20px !important}
+.cardviz .mono{font-size:15px}
+.cta.split{padding:40px 22px 0 !important;gap:8px}
+.cta.split > div:first-child{padding-bottom:12px !important}
+.ctaphone{height:330px !important}
+.topbar{position:sticky;top:10px}
+
+.tk{padding-top:10px !important}
+.bar{margin:0 12px;width:auto;padding:6px 6px 6px 12px !important;border-radius:16px !important}
+.bar svg{width:22px;height:22px}
+.bar .d{font-size:19px !important}
+.bar .login{padding:8px 10px !important;font-size:14px !important}
+.bar .go{min-height:38px !important;padding:0 14px !important;font-size:14px !important}
+.h1{font-size:28px;line-height:1.15;letter-spacing:-0.02em;white-space:normal}
+.h1 span{display:block}
+.sub{font-size:13px !important;line-height:1.45 !important;max-width:320px !important}
+.hero{padding-top:36px !important;padding-left:24px !important;padding-right:24px !important;gap:12px !important}
+.ctas-sm{display:flex !important}
+.hero-btn{min-height:42px !important;font-size:14px !important;padding:0 5px 0 18px !important}
+.hero-btn > span{width:32px !important;height:32px !important}
+.stage{height:470px;margin-top:32px !important}
+.phone > div{zoom:0.84}
+.phone{animation-range:0 220px}
+}
+</style>
+
+<div class="tk" style="width: 100%; padding-top: 24px; background: #ffffff; overflow-x: clip">
+
+<header class="bar topbar" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 12px 12px 20px; border-radius: 22px; background: #f3f6f4">
+<a href="#" aria-label="Tokkenly home" style="display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: #141a18">
+<svg width="26" height="26" viewBox="0 0 100 100" aria-hidden="true"><path d="M14.5 0 H85.5 A14.5 14.5 0 0 1 100 14.5 V85.5 A14.5 14.5 0 0 1 85.5 100 H50 A50 50 0 0 1 0 50 V14.5 A14.5 14.5 0 0 1 14.5 0 Z" fill="#12805f"></path></svg>
+<span class="d" style="font-size: 23px; font-weight: 620; letter-spacing: -0.045em">tokkenly</span>
+</a>
+<div style="display: flex; align-items: center; gap: 6px">
+<a class="login" href="#" style="display: inline-flex; padding: 12px 16px; font-size: 15px; font-weight: 500; color: #141a18; text-decoration: none; align-items: center">Log in</a>
+<a class="go" href="#" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 999px; background: #12805f; color: #ffffff; font-size: 15px; font-weight: 600; text-decoration: none">Get started</a>
+</div>
+</header>
+
+<div class="hero content" style="display: flex; flex-direction: column; align-items: center; gap: 20px; padding: 80px 32px 0; text-align: center">
+<h1 class="d h1" style="margin: 0; font-weight: 800; color: #141a18">Bank smarter. <span style="color: #12805f">Build wealth.</span></h1>
+<p class="sub" style="margin: 0; max-width: 620px; font-size: 18px; line-height: 1.55; color: #66716b">Send, receive, spend, earn on savings and invest globally from one AI-powered account.</p>
+<div class="ctas-sm" style="display: flex; justify-content: center; margin-top: 8px">
+<a class="hero-btn" href="#" style="display: inline-flex; align-items: center; gap: 12px; min-height: 54px; padding: 0 6px 0 24px; border-radius: 999px; background: #12805f; color: #ffffff; font-size: 16px; font-weight: 600; text-decoration: none">Get started <span style="display: inline-flex; width: 42px; height: 42px; border-radius: 999px; background: #c7f542; color: #03201a; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+</div>
+</div>
+
+<div class="stage" style="display: flex; justify-content: center; margin-top: 64px; overflow: hidden">
+<div class="phone">
+<div style="position: relative; width: 290px; height: 600px; padding: 9px; border-radius: 48px; background: #0a0d0c; border: 1px solid #2a3330; box-shadow: 0 40px 80px rgba(3,32,26,0.18)">
+<div style="position: relative; height: 100%; padding: 32px 3px 24px; border-radius: 39px; overflow: hidden; background: #f6f8f7"><span aria-hidden="true" style="position: absolute; left: 50%; bottom: 9px; width: 96px; height: 4px; margin-left: -48px; border-radius: 999px; background: #141a18"></span><span aria-hidden="true" style="position: absolute; left: 50%; top: 9px; width: 78px; height: 22px; margin-left: -39px; border-radius: 999px; background: #0a0d0c"></span><img src="assets/app-home-mobile-light-fit.png" alt="The Tokkenly app home screen: dollar balance, Deposit and Send, the USD card, bill shortcuts and stocks" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top"></div>
+
+</div>
+</div>
+</div>
+
+
+<!-- ===== One account ===== -->
+<section class="sec">
+<div class="wrap">
+<h2 class="d big reveal" style="margin: 0">One account.<br>A world of possibilities.</h2>
+<p class="lead" style="margin: 28px 0 0; max-width: 680px">Whether you hold cash or crypto, Tokkenly gives you more ways to use, manage and grow your money.</p>
+<div class="g2" style="margin-top: 56px">
+<article class="panel path" style="display: flex; flex-direction: column; gap: 14px; padding: 48px 44px">
+<span class="mono eyebrow" style="display: block; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #0b5c48">If you have cash</span>
+<h3 class="d h3" style="margin: 0; color: #141a18">Your money, now in dollars.</h3>
+<p class="body" style="margin: 4px 0 0; color: #5b6866">Fund your account by bank transfer and easily convert your local currency to dollars.</p>
+<div class="mono" style="margin-top: 18px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #0b5c48">With Tokkenly, you can</div>
+<ul style="margin: 0; padding: 0; list-style: none">
+<li style="display: flex; align-items: center; gap: 12px; padding: 14px 0; border-top: 1px solid #e3e9e6; font-size: 17px; font-weight: 500; color: #141a18"><span style="flex: none; display: inline-flex; color: #12805f"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"></path><path d="M9 12l2 2 4-4"></path></svg></span>Save in dollars</li><li style="display: flex; align-items: center; gap: 12px; padding: 14px 0; border-top: 1px solid #e3e9e6; font-size: 17px; font-weight: 500; color: #141a18"><span style="flex: none; display: inline-flex; color: #12805f"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5"></rect><path d="M3 10h18M7 15h3"></path></svg></span>Spend with your USD card</li><li style="display: flex; align-items: center; gap: 12px; padding: 14px 0; border-top: 1px solid #e3e9e6; font-size: 17px; font-weight: 500; color: #141a18"><span style="flex: none; display: inline-flex; color: #12805f"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19h16M7 15l4-4 3 3 5-6"></path></svg></span>Buy global and local stocks</li><li style="display: flex; align-items: center; gap: 12px; padding: 14px 0; border-top: 1px solid #e3e9e6; font-size: 17px; font-weight: 500; color: #141a18"><span style="flex: none; display: inline-flex; color: #12805f"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-8 6-14 15-14 0 9-6 15-14 15"></path><path d="M5 19l7-7"></path></svg></span>Earn on your savings</li>
+</ul>
+</article>
+<article class="path" style="display: flex; flex-direction: column; gap: 14px; padding: 48px 44px; border-radius: 32px; background: #e7f3ec; color: #141a18">
+<span class="mono eyebrow" style="display: block; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #0b5c48">If you have crypto</span>
+<h3 class="d h3" style="margin: 0; color: #141a18">Make your crypto work for you.</h3>
+<p class="body" style="margin: 4px 0 0; color: #5b6866">Deposit crypto from your wallet or exchange and use it as everyday money.</p>
+<div class="mono" style="margin-top: 18px; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #0b5c48">With Tokkenly, you can</div>
+<ul style="margin: 0; padding: 0; list-style: none">
+<li style="display: flex; align-items: center; gap: 12px; padding: 14px 0; border-top: 1px solid #cfe3d8; font-size: 17px; font-weight: 500; color: #141a18"><span style="flex: none; display: inline-flex; color: #12805f"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l9-6 9 6M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18"></path></svg></span>Cash out to your local bank</li><li style="display: flex; align-items: center; gap: 12px; padding: 14px 0; border-top: 1px solid #cfe3d8; font-size: 17px; font-weight: 500; color: #141a18"><span style="flex: none; display: inline-flex; color: #12805f"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5"></rect><path d="M3 10h18M7 15h3"></path></svg></span>Spend with your card and pay bills</li><li style="display: flex; align-items: center; gap: 12px; padding: 14px 0; border-top: 1px solid #cfe3d8; font-size: 17px; font-weight: 500; color: #141a18"><span style="flex: none; display: inline-flex; color: #12805f"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19h16M7 15l4-4 3 3 5-6"></path></svg></span>Buy global and local stocks</li><li style="display: flex; align-items: center; gap: 12px; padding: 14px 0; border-top: 1px solid #cfe3d8; font-size: 17px; font-weight: 500; color: #141a18"><span style="flex: none; display: inline-flex; color: #12805f"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-8 6-14 15-14 0 9-6 15-14 15"></path><path d="M5 19l7-7"></path></svg></span>Hold dollars and earn</li>
+</ul>
+</article>
+</div>
+</div>
+</section>
+<!-- ===== Everyday ===== -->
+<section class="sec" style="padding-top: 0">
+<div class="wrap">
+<h2 class="d h2" style="margin: 0">Built for everyday life.</h2>
+<div class="panel split" style="margin-top: 40px; padding: 48px 56px 0; overflow: hidden">
+<div style="display: flex; flex-direction: column; gap: 14px; padding-bottom: 48px">
+<span style="display: inline-flex; width: 56px; height: 56px; border-radius: 16px; background: #ffffff; color: #141a18; align-items: center; justify-content: center; box-shadow: 0 6px 16px rgba(3,32,26,0.06)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5"></rect><path d="M3 10h18M7 15h3"></path></svg></span>
+<h3 class="d h3" style="margin: 0">Spend without borders.</h3>
+<p class="body" style="margin: 0">Pay online anywhere Mastercard is accepted.</p>
+</div>
+<div class="phcol every-ph" style="position: relative; display: flex; justify-content: center; align-self: end; height: 340px">
+<div class="ph" style="overflow: hidden; height: 340px"><div style="position: relative; width: 290px; height: 600px; padding: 9px; border-radius: 48px; background: #0a0d0c; border: 1px solid #2a3330; box-shadow: 0 40px 80px rgba(3,32,26,0.16)">
+<div style="position: relative; height: 100%; padding: 32px 3px 24px; border-radius: 39px; overflow: hidden; background: #f6f8f7"><span aria-hidden="true" style="position: absolute; left: 50%; top: 9px; width: 78px; height: 22px; margin-left: -39px; border-radius: 999px; background: #0a0d0c"></span><span aria-hidden="true" style="position: absolute; left: 50%; bottom: 9px; width: 96px; height: 4px; margin-left: -48px; border-radius: 999px; background: #141a18"></span><img src="assets/app-card-fit.png" alt="The Tokkenly USD virtual card screen" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top"></div>
+</div></div>
+</div>
+</div>
+<div class="panel split usacct" style="margin-top: 20px; padding: 64px 56px; overflow: hidden; background: #03201a; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<span style="font-family: 'Geist Mono', monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.12em; color: #c7f542">US ACCOUNT</span>
+<h3 class="d usacct-h" style="margin: 0; font-size: 46px; line-height: 1.06; font-weight: 700; letter-spacing: -0.03em; color: #ffffff">Get paid in dollars, from anywhere.</h3>
+<p class="body" style="margin: 0; color: #b9cdc6">Your own US account and routing number. Receive ACH and wire payments from clients, employers and platforms straight into your dollar balance.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px"><span style="padding: 8px 14px; border-radius: 999px; background: rgba(199,245,66,0.12); color: #c7f542; font-size: 14px; font-weight: 600">ACH</span><span style="padding: 8px 14px; border-radius: 999px; background: rgba(199,245,66,0.12); color: #c7f542; font-size: 14px; font-weight: 600">Wire</span></div>
+</div>
+<div style="position: relative; display: flex; justify-content: center; padding: 20px 0 54px">
+<div class="usacct-card" style="width: 380px; max-width: 100%; padding: 26px 26px 26px; border-radius: 24px; background: #ffffff; box-shadow: 0 30px 70px rgba(0,0,0,0.35)">
+<div style="display: flex; align-items: center; justify-content: space-between"><div style="display: flex; align-items: center; gap: 10px"><span style="display: inline-flex; width: 36px; height: 36px; border-radius: 999px; background: #e6f2ec; align-items: center; justify-content: center; font-size: 18px" aria-hidden="true">🇺🇸</span><span class="d" style="font-size: 18px; font-weight: 700; color: #141a18">USD account</span></div><span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border-radius: 999px; background: #f3f6f4; color: #12805f; font-size: 13px; font-weight: 600"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"></rect><path d="M5 15V5a2 2 0 0 1 2-2h10"></path></svg>Copy</span></div>
+<div style="margin-top: 18px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 0; border-top: 1px solid #eef3f1"><span style="font-size: 14px; color: #5b6866">Account holder</span><span style="font-size: 15px; font-weight: 500; color: #141a18; white-space: nowrap">Panmun Kichime</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 0; border-top: 1px solid #eef3f1"><span style="font-size: 14px; color: #5b6866">Routing number</span><span style="font-family: 'Geist Mono', monospace; font-size: 15px; font-weight: 500; color: #141a18; white-space: nowrap">•••• 1206</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 0; border-top: 1px solid #eef3f1"><span style="font-size: 14px; color: #5b6866">Account number</span><span style="font-family: 'Geist Mono', monospace; font-size: 15px; font-weight: 500; color: #141a18; white-space: nowrap">•••• 4821</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 0; border-top: 1px solid #eef3f1"><span style="font-size: 14px; color: #5b6866">Account type</span><span style="font-size: 15px; font-weight: 500; color: #141a18; white-space: nowrap">Checking</span></div>
+</div>
+</div>
+<div class="usacct-n" style="position: absolute; left: -20px; bottom: 0; display: flex; align-items: center; gap: 12px; padding: 14px 18px 14px 14px; border-radius: 18px; background: #ffffff; box-shadow: 0 20px 44px rgba(0,0,0,0.30)"><span style="flex: none; display: inline-flex; width: 40px; height: 40px; border-radius: 12px; background: #12805f; color: #ffffff; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M6 13l6 6 6-6"></path></svg></span><div><div class="d" style="font-size: 15px; font-weight: 700; color: #141a18; white-space: nowrap">+$1,200.00 received</div><div style="font-size: 13px; color: #5b6866; white-space: nowrap">ACH from Northwind Studio</div></div></div>
+</div>
+</div>
+<div class="sendrow" style="display: grid; grid-template-columns: minmax(0,0.85fr) minmax(0,1.15fr); gap: 20px; margin-top: 20px">
+<div class="send-photo" style="position: relative; min-height: 520px; border-radius: 28px; overflow: hidden; background: linear-gradient(160deg,#dfeee6 0%,#eef5e4 55%,#f4f7ef 100%); display: flex; justify-content: center; align-items: flex-end">
+<div class="send-ph" style="flex: none; width: 290px; height: 460px"><div style="width: 290px; height: 600px; padding: 9px; border-radius: 48px; background: #0a0d0c; border: 1px solid #2a3330; box-shadow: 0 40px 80px rgba(3,32,26,0.16)"><div style="position: relative; height: 100%; padding-top: 32px; border-radius: 39px; overflow: hidden; background: #f6f8f7"><span aria-hidden="true" style="position: absolute; left: 50%; top: 9px; width: 78px; height: 22px; margin-left: -39px; border-radius: 999px; background: #0a0d0c"></span><img src="assets/app-send-peek.png" alt="Tokkenly send screen with @gonen and 25 dollars" style="display: block; width: 100%"></div></div></div>
+</div>
+<article class="send-card" style="position: relative; display: flex; flex-direction: column; padding: 64px 56px 0; border-radius: 28px; overflow: hidden; background: linear-gradient(150deg,#f3f9e6 0%,#e6f3ec 60%,#dcefe5 100%); min-height: 520px">
+<span style="font-family: 'Geist Mono', monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.12em; color: #12805f">SEND MONEY</span>
+<h3 class="d send-h" style="margin: 22px 0 0; font-size: 46px; line-height: 1.06; font-weight: 700; letter-spacing: -0.03em; color: #141a18">Send money to friends, family and clients anywhere.</h3>
+<p class="body" style="margin: 18px 0 0">To an @tag, email or wallet. It arrives in seconds.</p>
+<a href="#" style="display: inline-flex; align-items: center; gap: 8px; margin-top: 22px; font-size: 16px; font-weight: 600; color: #12805f; text-decoration: none">Send money <span style="display: inline-flex; width: 22px; height: 22px; border-radius: 999px; border: 1.6px solid currentColor; align-items: center; justify-content: center"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span></a>
+<div class="send-stack" style="position: relative; height: 190px; margin-top: auto; margin-left: 120px">
+<div aria-hidden="true" style="position: absolute; left: 48px; right: -60px; top: 98px; height: 92px; border-radius: 18px; background: #ffffff; box-shadow: 0 10px 24px rgba(3,32,26,0.05); opacity: 0.5"></div><div aria-hidden="true" style="position: absolute; left: 32px; right: -60px; top: 82px; height: 92px; border-radius: 18px; background: #ffffff; box-shadow: 0 10px 24px rgba(3,32,26,0.05); opacity: 0.7"></div><div aria-hidden="true" style="position: absolute; left: 16px; right: -60px; top: 66px; height: 92px; border-radius: 18px; background: #ffffff; box-shadow: 0 10px 24px rgba(3,32,26,0.05); opacity: 0.85"></div>
+<div class="send-n" style="position: absolute; left: 0; right: -60px; top: 30px; display: flex; gap: 16px; padding: 18px 20px; border-radius: 18px; background: #ffffff; box-shadow: 0 18px 40px rgba(3,32,26,0.10)"><span style="flex: none; display: inline-flex; width: 56px; height: 56px; border-radius: 14px; background: #141a18; color: #c7f542; align-items: center; justify-content: center"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></span>
+<div style="min-width: 0; flex: 1"><div style="display: flex; justify-content: space-between; gap: 12px"><span class="d" style="font-size: 17px; font-weight: 700; color: #141a18; white-space: nowrap">Transfer completed</span><span style="font-size: 13px; color: #8a9692; white-space: nowrap">Just now</span></div>
+<div style="margin-top: 4px; font-size: 15px; line-height: 1.45; color: #5b6866">You sent $25.00 to @gonen.</div></div></div>
+</div>
+</article>
+</div>
+<div class="panel split bills-panel" style="margin-top: 20px; padding: 48px 56px 0; overflow: hidden">
+<div style="display: flex; flex-direction: column; gap: 14px; padding-bottom: 48px">
+<h3 class="d h3" style="margin: 0">Pay bills.</h3>
+<p class="body" style="margin: 0">Airtime, data, power and TV in a few taps.</p>
+</div>
+<div style="display: flex; justify-content: center; align-self: end"><div class="peek bills-peek" style="display: flex; justify-content: center; height: 230px; margin: 0; overflow: hidden"><div style="flex: none; width: 290px; height: 600px; padding: 9px; border-radius: 48px; background: #0a0d0c; border: 1px solid #2a3330; box-shadow: 0 30px 60px rgba(3,32,26,0.14)"><div style="position: relative; height: 100%; padding-top: 32px; border-radius: 39px; overflow: hidden; background: #f6f8f7"><span aria-hidden="true" style="position: absolute; left: 50%; top: 9px; width: 78px; height: 22px; margin-left: -39px; border-radius: 999px; background: #0a0d0c"></span><img src="assets/app-bills-peek.png" alt="Tokkenly app shortcuts for gift a stock, airtime, data, electricity and TV" style="display: block; width: 100%"></div></div></div></div>
+</div>
+</div>
+</section>
+
+<!-- ===== How it works ===== -->
+<section class="sec" style="padding-top: 0">
+<div class="wrap">
+<h2 class="d h2" style="margin: 0">Get paid from anywhere in 3 steps.</h2>
+<div class="st-line" style="position: relative; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 20px; margin-top: 40px">
+<span aria-hidden="true" style="position: absolute; left: 32px; right: calc(33.33% - 20px); top: 21px; height: 2px; background: linear-gradient(90deg,#12805f,#cfe3d8)"></span>
+<div style="padding-left: 32px"><span class="d" style="position: relative; z-index: 1; display: inline-flex; width: 44px; height: 44px; border-radius: 999px; background: #12805f; color: #ffffff; border: 2px solid #12805f; align-items: center; justify-content: center; font-size: 17px; font-weight: 700">1</span></div><div style="padding-left: 32px"><span class="d" style="position: relative; z-index: 1; display: inline-flex; width: 44px; height: 44px; border-radius: 999px; background: #ffffff; color: #12805f; border: 2px solid #12805f; align-items: center; justify-content: center; font-size: 17px; font-weight: 700">2</span></div><div style="padding-left: 32px"><span class="d" style="position: relative; z-index: 1; display: inline-flex; width: 44px; height: 44px; border-radius: 999px; background: #ffffff; color: #12805f; border: 2px solid #12805f; align-items: center; justify-content: center; font-size: 17px; font-weight: 700">3</span></div>
+</div>
+<div class="g3" style="margin-top: 20px">
+<article class="panel st-card" style="display: flex; flex-direction: column; padding: 0; overflow: hidden">
+<div style="padding: 32px 32px 28px">
+<span class="mono st-num" style="display: none; font-size: 13px; letter-spacing: 0.1em; color: #0b5c48">STEP 1</span>
+<h3 class="d" style="margin: 0; font-size: 22px; line-height: 1.2; font-weight: 700; letter-spacing: -0.01em; color: #141a18">Sign up with your email</h3>
+<p class="body" style="margin: 8px 0 0; font-size: 16px">Create your account in minutes. No passwords to remember.</p>
+</div>
+<div class="st-vis" style="display: flex; justify-content: center; align-items: flex-end; height: 300px; margin-top: auto; padding: 0 32px; overflow: hidden"><div style="width: 100%; max-width: 300px; padding: 24px 22px 22px; border-radius: 22px 22px 0 0; background: #ffffff; box-shadow: 0 18px 44px rgba(3,32,26,0.10)">
+<div style="font-family: 'Geist Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: #12805f">WELCOME</div>
+<div class="d" style="margin-top: 8px; font-size: 21px; font-weight: 700; letter-spacing: -0.02em; color: #141a18">Log in to Tokkenly.</div>
+<div style="margin-top: 4px; font-size: 13px; line-height: 1.45; color: #5b6866">Your email is your account. New here? This opens one.</div>
+<div style="margin-top: 16px; font-size: 12px; font-weight: 600; color: #3f4a44">Email address</div>
+<div style="margin-top: 6px; padding: 12px 14px; border-radius: 14px; border: 1.5px solid #12805f; background: #f6f8f7; font-size: 14px; color: #141a18">panmun@email.com</div>
+<div style="display: flex; justify-content: center; align-items: center; height: 44px; margin-top: 12px; border-radius: 999px; background: #12805f; color: #ffffff; font-size: 14px; font-weight: 600">Continue</div>
+</div></div>
+</article>
+<article class="panel st-card" style="display: flex; flex-direction: column; padding: 0; overflow: hidden">
+<div style="padding: 32px 32px 28px">
+<span class="mono st-num" style="display: none; font-size: 13px; letter-spacing: 0.1em; color: #0b5c48">STEP 2</span>
+<h3 class="d" style="margin: 0; font-size: 22px; line-height: 1.2; font-weight: 700; letter-spacing: -0.01em; color: #141a18">Verify your identity</h3>
+<p class="body" style="margin: 8px 0 0; font-size: 16px">A quick check that keeps your account and your money safe.</p>
+</div>
+<div class="st-vis" style="display: flex; justify-content: center; align-items: flex-end; height: 300px; margin-top: auto; padding: 0 32px; overflow: hidden"><div style="width: 100%; max-width: 300px; padding: 24px 22px 22px; border-radius: 22px 22px 0 0; background: #ffffff; box-shadow: 0 18px 44px rgba(3,32,26,0.10); text-align: center">
+<div style="position: relative; width: 112px; height: 112px; margin: 4px auto 0; border-radius: 999px; background: #e6f2ec; display: flex; align-items: center; justify-content: center">
+<div style="width: 64px; height: 44px; padding: 7px; border-radius: 9px; background: #ffffff; box-shadow: 0 6px 16px rgba(3,32,26,0.12); display: flex; gap: 6px"><div style="width: 18px; border-radius: 4px; background: #cfe3d9"></div><div style="flex: 1; display: flex; flex-direction: column; gap: 4px; padding-top: 2px"><div style="height: 4px; border-radius: 2px; background: #cfe3d9"></div><div style="height: 4px; width: 70%; border-radius: 2px; background: #e3ede8"></div><div style="height: 4px; width: 85%; border-radius: 2px; background: #e3ede8"></div></div></div>
+<span style="position: absolute; right: 2px; bottom: 6px; display: inline-flex; width: 38px; height: 38px; border-radius: 999px; background: #12805f; border: 3px solid #ffffff; color: #ffffff; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+</div>
+<div class="d" style="margin-top: 18px; font-size: 19px; font-weight: 700; color: #141a18">You're verified</div>
+<div style="margin-top: 4px; font-size: 13px; color: #5b6866">Your account details are ready.</div>
+<div style="display: flex; justify-content: center; align-items: center; height: 44px; margin-top: 16px; border-radius: 999px; background: #12805f; color: #ffffff; font-size: 14px; font-weight: 600">Go to home</div>
+</div></div>
+</article>
+<article class="panel st-card" style="display: flex; flex-direction: column; padding: 0; overflow: hidden">
+<div style="padding: 32px 32px 28px">
+<span class="mono st-num" style="display: none; font-size: 13px; letter-spacing: 0.1em; color: #0b5c48">STEP 3</span>
+<h3 class="d" style="margin: 0; font-size: 22px; line-height: 1.2; font-weight: 700; letter-spacing: -0.01em; color: #141a18">Get your account details</h3>
+<p class="body" style="margin: 8px 0 0; font-size: 16px">Receive dollars by ACH, wire or crypto, then save, spend and invest them.</p>
+</div>
+<div class="st-vis" style="display: flex; justify-content: flex-start; align-items: flex-end; height: 300px; margin-top: auto; padding: 0 32px; overflow: hidden"><div style="display: flex; gap: 14px; margin-left: -6px">
+<div style="flex: none; width: 250px; padding: 22px 22px 26px; border-radius: 22px 22px 0 0; background: #ffffff; box-shadow: 0 18px 44px rgba(3,32,26,0.10)">
+<div style="display: flex; align-items: center; gap: 10px"><span style="display: inline-flex; width: 38px; height: 38px; border-radius: 999px; background: #e6f2ec; align-items: center; justify-content: center; font-size: 19px" aria-hidden="true">🇺🇸</span><span class="d" style="font-size: 18px; font-weight: 700; color: #141a18; white-space: nowrap">US account</span></div>
+<div class="d" style="margin-top: 18px; font-size: 28px; font-weight: 700; letter-spacing: -0.02em; color: #141a18">$1,200.00</div>
+<div style="margin-top: 14px; font-size: 12px; color: #8a9692">Account number</div><div style="margin-top: 2px; font-family: 'Geist Mono', monospace; font-size: 14px; color: #141a18; white-space: nowrap">•••• 4821</div>
+<div style="margin-top: 10px; font-size: 12px; color: #8a9692">Routing number</div><div style="margin-top: 2px; font-family: 'Geist Mono', monospace; font-size: 14px; color: #141a18; white-space: nowrap">•••• 1206</div>
+</div>
+<div style="flex: none; width: 250px; padding: 22px 22px 26px; border-radius: 22px 22px 0 0; background: #ffffff; box-shadow: 0 18px 44px rgba(3,32,26,0.10)">
+<div style="display: flex; align-items: center; gap: 10px"><span style="display: inline-flex; width: 38px; height: 38px; border-radius: 999px; background: #e6f2ec; align-items: center; justify-content: center; font-size: 19px" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#12805f" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v10M9.5 9.5h3.75a1.75 1.75 0 0 1 0 3.5h-2.5a1.75 1.75 0 0 0 0 3.5H14.5"></path></svg></span><span class="d" style="font-size: 18px; font-weight: 700; color: #141a18; white-space: nowrap">Crypto wallet</span></div>
+<div class="d" style="margin-top: 18px; font-size: 28px; font-weight: 700; letter-spacing: -0.02em; color: #141a18">480.00 USDC</div>
+<div style="margin-top: 14px; font-size: 12px; color: #8a9692">Network</div><div style="margin-top: 2px; font-family: 'Geist Mono', monospace; font-size: 14px; color: #141a18; white-space: nowrap">Base</div>
+<div style="margin-top: 10px; font-size: 12px; color: #8a9692">Address</div><div style="margin-top: 2px; font-family: 'Geist Mono', monospace; font-size: 14px; color: #141a18; white-space: nowrap">0x7a3f…9e1c</div>
+</div>
+</div></div>
+</article>
+</div>
+</div>
+</section>
+
+<!-- ===== Grow ===== -->
+<section class="sec" style="padding-top: 0">
+<div class="wrap">
+<h2 class="d h2" style="margin: 0">Make your money work for you.</h2>
+<div class="panel split" style="margin-top: 40px; padding: 56px">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<span style="display: inline-flex; width: 56px; height: 56px; border-radius: 16px; background: #ffffff; color: #141a18; align-items: center; justify-content: center; box-shadow: 0 6px 16px rgba(3,32,26,0.06)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-8 6-14 15-14 0 9-6 15-14 15"></path><path d="M5 19l7-7"></path></svg></span>
+<h3 class="d h3" style="margin: 0">Earn on your savings.</h3>
+<p class="body" style="margin: 0">Put idle dollars to work, invest from small amounts and borrow without selling.</p>
+</div>
+<div class="phcol" style="position: relative; display: flex; justify-content: center; padding: 30px 0">
+<div style="width: 340px; max-width: 100%; padding: 22px; border-radius: 22px; background: #ffffff; box-shadow: 0 24px 60px rgba(3,32,26,0.10)">
+<div style="font-size: 13px; color: #5b6866">Savings</div>
+<div class="d" style="margin-top: 2px; font-size: 34px; font-weight: 700; letter-spacing: -0.02em">$1,250.00</div>
+<div style="display: inline-flex; margin-top: 6px; padding: 4px 10px; border-radius: 999px; background: #e6f2ec; font-size: 12px; font-weight: 600; color: #0b5c48">+$4.80 this month</div>
+<svg viewBox="0 0 300 90" width="100%" height="90" aria-hidden="true" style="display: block; margin-top: 16px"><path d="M0 80 C45 78 75 70 110 64 S170 50 210 36 S265 16 300 8" fill="none" stroke="#12805f" stroke-width="3" stroke-linecap="round"></path><path d="M0 80 C45 78 75 70 110 64 S170 50 210 36 S265 16 300 8 L300 90 L0 90 Z" fill="#12805f" opacity="0.08"></path></svg>
+</div>
+<div class="fchip fc-e1" style="position: absolute; left: -6px; top: 0; display: flex; align-items: center; gap: 10px; padding: 10px 16px 10px 10px; border-radius: 16px; background: #ffffff; box-shadow: 0 16px 40px rgba(3,32,26,0.12); font-size: 14px; font-weight: 600; color: #141a18; white-space: nowrap"><span style="display: inline-flex; width: 34px; height: 34px; border-radius: 10px; background: #141a18; color: #ffffff; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19h16M7 15l4-4 3 3 5-6"></path></svg></span>Invest from $1</div>
+<div class="fchip fc-e2" style="position: absolute; right: -6px; bottom: 0; display: flex; align-items: center; gap: 10px; padding: 10px 16px 10px 10px; border-radius: 16px; background: #ffffff; box-shadow: 0 16px 40px rgba(3,32,26,0.12); font-size: 14px; font-weight: 600; color: #141a18; white-space: nowrap"><span style="display: inline-flex; width: 34px; height: 34px; border-radius: 10px; background: #141a18; color: #ffffff; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="9" cy="7" rx="6" ry="3"></ellipse><path d="M3 7v4c0 1.7 2.7 3 6 3s6-1.3 6-3V7"></path><path d="M9 14v3c0 1.7 2.7 3 6 3s6-1.3 6-3v-4c0-1.7-2.7-3-6-3"></path></svg></span>Borrow without selling</div>
+</div>
+</div>
+<div class="g2" style="margin-top: 20px">
+<article class="panel" style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; padding: 40px; overflow: hidden">
+<h3 class="d h3" style="margin: 0">Gift a stock</h3>
+<p style="margin: 0; font-size: 18px; font-weight: 600; color: #3f4a44">Give a gift that can grow.</p>
+<div style="display: flex; justify-content: center; margin-top: 32px"><div style="width: 260px; max-width: 100%; padding: 20px; border-radius: 20px; background: #141a18; color: #ffffff; transform: rotate(-4deg); box-shadow: 0 24px 50px rgba(3,32,26,0.22)">
+<div style="display: flex; justify-content: space-between; align-items: center"><span class="mono" style="font-size: 10px; letter-spacing: 0.14em; color: #c7f542">A GIFT FOR GONEN</span><span style="color: #c7f542"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"></rect><path d="M5 12v8h14v-8M12 8v12M12 8c-1.5-3-5-3.5-5-1s3 1 5 1c2 0 5 1.5 5-1s-3.5-2-5 1"></path></svg></span></div>
+<div class="d" style="margin-top: 18px; font-size: 30px; font-weight: 700">$50.00</div>
+<div style="font-size: 12px; color: #9aa8a4">Apple stock</div>
+<div style="margin-top: 12px; padding: 9px 12px; border-radius: 10px; background: #1f2826; font-size: 13px">“Happy birthday!”</div>
+</div></div>
+</article>
+<div style="display: grid; gap: 20px">
+<article class="panel" style="display: flex; flex-direction: column; justify-content: center; gap: 2px; padding: 40px"><span class="d stack" style="color: #141a18">Clear rates</span><span class="d stack" style="color: #4f5b57">Transparent fees</span><span class="d stack" style="color: #8a958f">No surprises</span></article>
+<article class="panel" style="display: flex; flex-direction: column; justify-content: center; gap: 2px; padding: 40px"><span class="d stack" style="color: #141a18">Simple</span><span class="d stack" style="color: #4f5b57">Transparent</span><span class="d stack" style="color: #8a958f">Human</span></article>
+</div>
+</div>
+<p style="margin: 20px 0 0; font-size: 13px; color: #5b6866">Investments involve risk and can lose value. Borrowing may result in liquidation. Illustrations use hypothetical amounts.</p>
+</div>
+</section>
+
+<!-- ===== Markets ===== -->
+<section class="sec" style="background: #f3f6f4">
+<div class="wrap">
+<span class="mono eyebrow" style="display: block; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #0b5c48">Investment markets</span>
+<h2 class="d h2" style="margin: 12px 0 0">The world is your market.</h2>
+<p class="body" style="margin: 12px 0 0; max-width: 620px">From global technology companies to local market opportunities, discover investments that align with your ambitions.</p>
+</div>
+<div class="marquee" style="margin-top: 48px" aria-label="Companies you can invest in on Tokkenly">
+<div class="track"><div style="flex: none; display: flex; flex-direction: column; gap: 14px; width: 220px; padding: 22px; border-radius: 20px; background: #ffffff; border: 1px solid #e3e9e6"><span class="d" style="display: inline-flex; width: 44px; height: 44px; border-radius: 14px; background: #141a18; color: #ffffff; align-items: center; justify-content: center; font-size: 18px; font-weight: 700">A</span><span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px; font-weight: 600">Apple</strong><span class="mono" style="font-size: 12px; color: #5b6866">AAPL · Global market</span></span></div><div style="flex: none; display: flex; flex-direction: column; gap: 14px; width: 220px; padding: 22px; border-radius: 20px; background: #ffffff; border: 1px solid #e3e9e6"><span class="d" style="display: inline-flex; width: 44px; height: 44px; border-radius: 14px; background: #141a18; color: #ffffff; align-items: center; justify-content: center; font-size: 18px; font-weight: 700">N</span><span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px; font-weight: 600">NVIDIA</strong><span class="mono" style="font-size: 12px; color: #5b6866">NVDA · Global market</span></span></div><div style="flex: none; display: flex; flex-direction: column; gap: 14px; width: 220px; padding: 22px; border-radius: 20px; background: #ffffff; border: 1px solid #e3e9e6"><span class="d" style="display: inline-flex; width: 44px; height: 44px; border-radius: 14px; background: #141a18; color: #ffffff; align-items: center; justify-content: center; font-size: 18px; font-weight: 700">T</span><span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px; font-weight: 600">Tesla</strong><span class="mono" style="font-size: 12px; color: #5b6866">TSLA · Global market</span></span></div><div style="flex: none; display: flex; flex-direction: column; gap: 14px; width: 220px; padding: 22px; border-radius: 20px; background: #ffffff; border: 1px solid #e3e9e6"><span class="d" style="display: inline-flex; width: 44px; height: 44px; border-radius: 14px; background: #141a18; color: #ffffff; align-items: center; justify-content: center; font-size: 18px; font-weight: 700">G</span><span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px; font-weight: 600">Alphabet</strong><span class="mono" style="font-size: 12px; color: #5b6866">GOOGL · Global market</span></span></div><div style="flex: none; display: flex; flex-direction: column; gap: 14px; width: 220px; padding: 22px; border-radius: 20px; background: #ffffff; border: 1px solid #e3e9e6"><span class="d" style="display: inline-flex; width: 44px; height: 44px; border-radius: 14px; background: #141a18; color: #ffffff; align-items: center; justify-content: center; font-size: 18px; font-weight: 700">M</span><span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px; font-weight: 600">Meta</strong><span class="mono" style="font-size: 12px; color: #5b6866">META · Global market</span></span></div><div style="flex: none; display: flex; flex-direction: column; gap: 14px; width: 220px; padding: 22px; border-radius: 20px; background: #ffffff; border: 1px solid #e3e9e6"><span class="d" style="display: inline-flex; width: 44px; height: 44px; border-radius: 14px; background: #141a18; color: #ffffff; align-items: center; justify-content: center; font-size: 18px; font-weight: 700">I</span><span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px; font-weight: 600">Intel</strong><span class="mono" style="font-size: 12px; color: #5b6866">INTC · Global market</span></span></div><div style="flex: none; display: flex; flex-direction: column; gap: 14px; width: 220px; padding: 22px; border-radius: 20px; background: #ffffff; border: 1px solid #e3e9e6"><span class="d" style="display: inline-flex; width: 44px; height: 44px; border-radius: 14px; background: #141a18; color: #ffffff; align-items: center; justify-content: center; font-size: 18px; font-weight: 700">C</span><span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px; font-weight: 600">Circle</strong><span class="mono" style="font-size: 12px; color: #5b6866">CRCL · Global market</span></span></div><div style="flex: none; display: flex; flex-direction: column; gap: 14px; width: 220px; padding: 22px; border-radius: 20px; background: #ffffff; border: 1px solid #e3e9e6"><span class="d" style="display: inline-flex; width: 44px; height: 44px; border-radius: 14px; background: #c7f542; color: #141a18; align-items: center; justify-content: center; font-size: 18px; font-weight: 700">M</span><span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px; font-weight: 600">MTN</strong><span class="mono" style="font-size: 12px; color: #5b6866">MTNN · Local market</span></span></div><div style="flex: none; display: flex; flex-direction: column; gap: 14px; width: 220px; padding: 22px; border-radius: 20px; background: #ffffff; border: 1px solid #e3e9e6"><span class="d" style="display: inline-flex; width: 44px; height: 44px; border-radius: 14px; background: #c7f542; color: #141a18; align-items: center; justify-content: center; font-size: 18px; font-weight: 700">G</span><span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px; font-weight: 600">GTCO</strong><span class="mono" style="font-size: 12px; color: #5b6866">GTCO · Local market</span></span></div><div aria-hidden="true" style="display: contents"><div style="flex: none; display: flex; flex-direction: column; gap: 14px; width: 220px; padding: 22px; border-radius: 20px; background: #ffffff; border: 1px solid #e3e9e6"><span class="d" style="display: inline-flex; width: 44px; height: 44px; border-radius: 14px; background: #141a18; color: #ffffff; align-items: center; justify-content: center; font-size: 18px; font-weight: 700">A</span><span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px; font-weight: 600">Apple</strong><span class="mono" style="font-size: 12px; color: #5b6866">AAPL · Global market</span></span></div><div style="flex: none; display: flex; flex-direction: column; gap: 14px; width: 220px; padding: 22px; border-radius: 20px; background: #ffffff; border: 1px solid #e3e9e6"><span class="d" style="display: inline-flex; width: 44px; height: 44px; border-radius: 14px; background: #141a18; color: #ffffff; align-items: center; justify-content: center; font-size: 18px; font-weight: 700">N</span><span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px; font-weight: 600">NVIDIA</strong><span class="mono" style="font-size: 12px; color: #5b6866">NVDA · Global market</span></span></div><div style="flex: none; display: flex; flex-direction: column; gap: 14px; width: 220px; padding: 22px; border-radius: 20px; background: #ffffff; border: 1px solid #e3e9e6"><span class="d" style="display: inline-flex; width: 44px; height: 44px; border-radius: 14px; background: #141a18; color: #ffffff; align-items: center; justify-content: center; font-size: 18px; font-weight: 700">T</span><span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px; font-weight: 600">Tesla</strong><span class="mono" style="font-size: 12px; color: #5b6866">TSLA · Global market</span></span></div><div style="flex: none; display: flex; flex-direction: column; gap: 14px; width: 220px; padding: 22px; border-radius: 20px; background: #ffffff; border: 1px solid #e3e9e6"><span class="d" style="display: inline-flex; width: 44px; height: 44px; border-radius: 14px; background: #141a18; color: #ffffff; align-items: center; justify-content: center; font-size: 18px; font-weight: 700">G</span><span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px; font-weight: 600">Alphabet</strong><span class="mono" style="font-size: 12px; color: #5b6866">GOOGL · Global market</span></span></div><div style="flex: none; display: flex; flex-direction: column; gap: 14px; width: 220px; padding: 22px; border-radius: 20px; background: #ffffff; border: 1px solid #e3e9e6"><span class="d" style="display: inline-flex; width: 44px; height: 44px; border-radius: 14px; background: #141a18; color: #ffffff; align-items: center; justify-content: center; font-size: 18px; font-weight: 700">M</span><span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px; font-weight: 600">Meta</strong><span class="mono" style="font-size: 12px; color: #5b6866">META · Global market</span></span></div><div style="flex: none; display: flex; flex-direction: column; gap: 14px; width: 220px; padding: 22px; border-radius: 20px; background: #ffffff; border: 1px solid #e3e9e6"><span class="d" style="display: inline-flex; width: 44px; height: 44px; border-radius: 14px; background: #141a18; color: #ffffff; align-items: center; justify-content: center; font-size: 18px; font-weight: 700">I</span><span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px; font-weight: 600">Intel</strong><span class="mono" style="font-size: 12px; color: #5b6866">INTC · Global market</span></span></div><div style="flex: none; display: flex; flex-direction: column; gap: 14px; width: 220px; padding: 22px; border-radius: 20px; background: #ffffff; border: 1px solid #e3e9e6"><span class="d" style="display: inline-flex; width: 44px; height: 44px; border-radius: 14px; background: #141a18; color: #ffffff; align-items: center; justify-content: center; font-size: 18px; font-weight: 700">C</span><span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px; font-weight: 600">Circle</strong><span class="mono" style="font-size: 12px; color: #5b6866">CRCL · Global market</span></span></div><div style="flex: none; display: flex; flex-direction: column; gap: 14px; width: 220px; padding: 22px; border-radius: 20px; background: #ffffff; border: 1px solid #e3e9e6"><span class="d" style="display: inline-flex; width: 44px; height: 44px; border-radius: 14px; background: #c7f542; color: #141a18; align-items: center; justify-content: center; font-size: 18px; font-weight: 700">M</span><span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px; font-weight: 600">MTN</strong><span class="mono" style="font-size: 12px; color: #5b6866">MTNN · Local market</span></span></div><div style="flex: none; display: flex; flex-direction: column; gap: 14px; width: 220px; padding: 22px; border-radius: 20px; background: #ffffff; border: 1px solid #e3e9e6"><span class="d" style="display: inline-flex; width: 44px; height: 44px; border-radius: 14px; background: #c7f542; color: #141a18; align-items: center; justify-content: center; font-size: 18px; font-weight: 700">G</span><span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px; font-weight: 600">GTCO</strong><span class="mono" style="font-size: 12px; color: #5b6866">GTCO · Local market</span></span></div></div></div>
+</div>
+<div class="wrap" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-top: 40px">
+<p class="d" style="margin: 0; font-size: 22px; font-weight: 700">All from one account.</p>
+<a href="#" style="display: inline-flex; align-self: flex-start; align-items: center; gap: 12px; min-height: 52px; padding: 0 6px 0 22px; border-radius: 999px; background: #12805f; color: #ffffff; font-size: 16px; font-weight: 600; text-decoration: none">Explore investments <span style="display: inline-flex; width: 40px; height: 40px; border-radius: 999px; background: #c7f542; color: #03201a; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+</div>
+</section>
+<!-- ===== Closing ===== -->
+<section class="sec">
+<div class="wrap">
+<div class="cta split" style="position: relative; padding: 64px 56px 0; overflow: hidden">
+<div style="display: flex; flex-direction: column; gap: 20px; padding-bottom: 64px">
+<h2 class="d h2" style="margin: 0; color: #ffffff">Ambition has no borders.<br><span style="color: #c7f542">Neither should opportunity.</span></h2>
+<p class="body" style="margin: 0; color: #9aa8a4">A smarter way to move, manage and grow your money.</p>
+<a href="#" style="display: inline-flex; align-self: flex-start; align-items: center; gap: 12px; min-height: 52px; padding: 0 6px 0 22px; border-radius: 999px; background: #c7f542; color: #03201a; font-size: 16px; font-weight: 600; text-decoration: none">Get started <span style="display: inline-flex; width: 40px; height: 40px; border-radius: 999px; background: #03201a; color: #c7f542; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
+</div>
+<div class="ctaphone" style="display: flex; justify-content: center; align-self: end; height: 440px; overflow: hidden"><div class="ph"><div style="position: relative; width: 290px; height: 600px; padding: 9px; border-radius: 48px; background: #0a0d0c; border: 1px solid #2a3330; box-shadow: 0 40px 80px rgba(3,32,26,0.16)">
+<div style="position: relative; height: 100%; padding: 32px 3px 24px; border-radius: 39px; overflow: hidden; background: #f6f8f7"><span aria-hidden="true" style="position: absolute; left: 50%; top: 9px; width: 78px; height: 22px; margin-left: -39px; border-radius: 999px; background: #0a0d0c"></span><span aria-hidden="true" style="position: absolute; left: 50%; bottom: 9px; width: 96px; height: 4px; margin-left: -48px; border-radius: 999px; background: #141a18"></span><img src="assets/app-home-mobile-light-fit.png" alt="The Tokkenly app home screen" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top"></div>
+</div></div></div>
+</div>
+</div>
+</section>
+<!-- ===== Footer ===== -->
+<footer class="wrap" style="padding-bottom: 48px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; padding: 32px 0; border-bottom: 1px solid #e3e9e6">
+<span style="display: flex; flex-direction: column; gap: 8px"><span style="display: inline-flex; align-items: center; gap: 10px"><svg width="26" height="26" viewBox="0 0 100 100" aria-hidden="true"><path d="M14.5 0 H85.5 A14.5 14.5 0 0 1 100 14.5 V85.5 A14.5 14.5 0 0 1 85.5 100 H50 A50 50 0 0 1 0 50 V14.5 A14.5 14.5 0 0 1 14.5 0 Z" fill="#12805f"></path></svg><span class="d" style="font-size: 23px; font-weight: 620; letter-spacing: -0.045em">tokkenly</span></span><span style="font-size: 14px; color: #5b6866">Bank smarter. Build wealth.</span></span>
+<div style="display: flex; gap: 8px"><a href="#" aria-label="Tokkenly on X" style="display: inline-flex; width: 40px; height: 40px; border-radius: 999px; border: 1px solid #d6dedb; color: #141a18; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"></path></svg></a><a href="#" aria-label="Tokkenly on LinkedIn" style="display: inline-flex; width: 40px; height: 40px; border-radius: 999px; border: 1px solid #d6dedb; color: #141a18; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M8 10v7M8 7v.01M12 17v-7M12 13a3 3 0 0 1 6 0v4"></path></svg></a><a href="#" aria-label="Tokkenly on Instagram" style="display: inline-flex; width: 40px; height: 40px; border-radius: 999px; border: 1px solid #d6dedb; color: #141a18; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5h.01"></path></svg></a><a href="#" aria-label="Tokkenly on YouTube" style="display: inline-flex; width: 40px; height: 40px; border-radius: 999px; border: 1px solid #d6dedb; color: #141a18; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"></rect><path d="M10 9l5 3-5 3z"></path></svg></a></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding-top: 24px; font-size: 14px">
+<span style="color: #5b6866">© 2026 Tokkenly. <a href="#" style="color: #3f4a44">support@tokkenly.com</a></span>
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 8px 20px"><a href="#" style="color: #3f4a44; text-decoration: none">About</a><a href="#" style="color: #3f4a44; text-decoration: none">Blog</a><a href="#" style="color: #3f4a44; text-decoration: none">Help</a><a href="#" style="color: #3f4a44; text-decoration: none">Fees</a><a href="#" style="color: #3f4a44; text-decoration: none">How we hold your money</a><a href="#" style="color: #3f4a44; text-decoration: none">Terms</a><a href="#" style="color: #3f4a44; text-decoration: none">Privacy</a></nav>
+</div>
+<p style="margin: 24px 0 0; max-width: 780px; font-size: 12px; line-height: 1.6; color: #66716b">Tokkenly is a financial technology company, not a bank. Payments and currency conversion are processed by licensed partners. Dollar balances are held as USDC. Investments involve risk and can lose value. Products and services are subject to regional availability.</p>
+</footer>
+</div>
+
+
+</body>
+</html>
