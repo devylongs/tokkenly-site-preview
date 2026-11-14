@@ -83,7 +83,17 @@ a{color:#12805f}a:hover{color:#0b3d31}
 @keyframes aqA{0%,20%{opacity:0;max-height:0;transform:translateY(6px)}23%,100%{opacity:1;max-height:400px;transform:none}}
 @keyframes aqDot{0%,100%{opacity:.3}50%{opacity:1}}
 @media (prefers-reduced-motion:reduce){.aq-scene,.aq-q,.aq-ai,.aq-status,.aq-a,.aq-dots i{animation:none}.aq-scene:first-child,.aq-scene:first-child .aq-q,.aq-scene:first-child .aq-ai,.aq-scene:first-child .aq-a{opacity:1;max-height:none}.aq-status{display:none}}
+
+.faq-item{border-bottom:1px solid #e3e9e6}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-ico{transition:transform .25s ease}
+.faq-item[open] .faq-ico{transform:rotate(45deg)}
+.faq-item summary:hover .faq-q{color:#12805f}
 @media (max-width:760px){
+.faq-grid{grid-template-columns:minmax(0,1fr) !important;gap:24px !important}
+.faq-side{position:static !important}
+.faq-q{font-size:17px !important}
+.faq-item p{padding-right:0 !important;font-size:16px !important}
 .aq-phone{width:320px !important}
 .ai-panel{padding:36px 22px !important}
 .ai-h{font-size:32px !important}
@@ -468,6 +478,47 @@ a{color:#12805f}a:hover{color:#0b3d31}
 <a href="#" style="display: inline-flex; align-self: flex-start; align-items: center; gap: 12px; min-height: 52px; padding: 0 6px 0 22px; border-radius: 999px; background: #12805f; color: #ffffff; font-size: 16px; font-weight: 600; text-decoration: none">Explore investments <span style="display: inline-flex; width: 40px; height: 40px; border-radius: 999px; background: #c7f542; color: #03201a; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></a>
 </div>
 </section>
+<!-- ===== FAQ ===== -->
+<section class="sec" style="padding-top: 0">
+<div class="wrap faq-grid" style="display: grid; grid-template-columns: minmax(0,0.8fr) minmax(0,1.2fr); gap: 64px; align-items: start">
+<div class="faq-side" style="position: sticky; top: 120px">
+<h2 class="d h2" style="margin: 0">Questions?<br>We have answers.</h2>
+<p class="body" style="margin: 18px 0 0">Can't find what you're looking for? Our team is here to help.</p>
+<a href="#" style="display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; font-size: 16px; font-weight: 600; color: #12805f; text-decoration: none">support@tokkenly.com</a>
+</div>
+<div style="border-top: 1px solid #e3e9e6">
+<details class="faq-item" open>
+<summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0; cursor: pointer; list-style: none"><span class="d faq-q" style="font-size: 20px; font-weight: 600; letter-spacing: -0.01em; color: #141a18">What is Tokkenly?</span><span style="flex: none; display: inline-flex; width: 36px; height: 36px; border-radius: 999px; background: #f3f6f4; color: #12805f; align-items: center; justify-content: center"><svg class="faq-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></summary>
+<p class="body" style="margin: 0; padding: 0 56px 24px 0; font-size: 17px">Tokkenly is one account to send, receive, spend, save and invest in dollars. Fund it with your local currency or crypto, and use it like any money app.</p>
+</details><details class="faq-item">
+<summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0; cursor: pointer; list-style: none"><span class="d faq-q" style="font-size: 20px; font-weight: 600; letter-spacing: -0.01em; color: #141a18">Is Tokkenly a bank?</span><span style="flex: none; display: inline-flex; width: 36px; height: 36px; border-radius: 999px; background: #f3f6f4; color: #12805f; align-items: center; justify-content: center"><svg class="faq-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></summary>
+<p class="body" style="margin: 0; padding: 0 56px 24px 0; font-size: 17px">No. Tokkenly is a financial technology company. Licensed partners process payments and currency conversion.</p>
+</details><details class="faq-item">
+<summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0; cursor: pointer; list-style: none"><span class="d faq-q" style="font-size: 20px; font-weight: 600; letter-spacing: -0.01em; color: #141a18">How are my dollars held?</span><span style="flex: none; display: inline-flex; width: 36px; height: 36px; border-radius: 999px; background: #f3f6f4; color: #12805f; align-items: center; justify-content: center"><svg class="faq-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></summary>
+<p class="body" style="margin: 0; padding: 0 56px 24px 0; font-size: 17px">Your balance is held in USDC, a digital dollar designed to stay worth one US dollar. In the app, you just see dollars.</p>
+</details><details class="faq-item">
+<summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0; cursor: pointer; list-style: none"><span class="d faq-q" style="font-size: 20px; font-weight: 600; letter-spacing: -0.01em; color: #141a18">Do I need to understand crypto?</span><span style="flex: none; display: inline-flex; width: 36px; height: 36px; border-radius: 999px; background: #f3f6f4; color: #12805f; align-items: center; justify-content: center"><svg class="faq-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></summary>
+<p class="body" style="margin: 0; padding: 0 56px 24px 0; font-size: 17px">No. You see your balance in dollars and use Tokkenly like any money app. The technology works in the background.</p>
+</details><details class="faq-item">
+<summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0; cursor: pointer; list-style: none"><span class="d faq-q" style="font-size: 20px; font-weight: 600; letter-spacing: -0.01em; color: #141a18">How do I add money?</span><span style="flex: none; display: inline-flex; width: 36px; height: 36px; border-radius: 999px; background: #f3f6f4; color: #12805f; align-items: center; justify-content: center"><svg class="faq-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></summary>
+<p class="body" style="margin: 0; padding: 0 56px 24px 0; font-size: 17px">Send money by bank transfer in your local currency, or deposit crypto from your wallet or an exchange. Either way, it lands in your account as dollars.</p>
+</details><details class="faq-item">
+<summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0; cursor: pointer; list-style: none"><span class="d faq-q" style="font-size: 20px; font-weight: 600; letter-spacing: -0.01em; color: #141a18">Can I get paid from abroad?</span><span style="flex: none; display: inline-flex; width: 36px; height: 36px; border-radius: 999px; background: #f3f6f4; color: #12805f; align-items: center; justify-content: center"><svg class="faq-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></summary>
+<p class="body" style="margin: 0; padding: 0 56px 24px 0; font-size: 17px">Yes. You get your own US account and routing number, so clients, employers and platforms can pay you by ACH or wire.</p>
+</details><details class="faq-item">
+<summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0; cursor: pointer; list-style: none"><span class="d faq-q" style="font-size: 20px; font-weight: 600; letter-spacing: -0.01em; color: #141a18">Are the stocks real?</span><span style="flex: none; display: inline-flex; width: 36px; height: 36px; border-radius: 999px; background: #f3f6f4; color: #12805f; align-items: center; justify-content: center"><svg class="faq-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></summary>
+<p class="body" style="margin: 0; padding: 0 56px 24px 0; font-size: 17px">Tokkenly offers tokenized stocks that track the price of the real shares. Investments involve risk and can lose value.</p>
+</details><details class="faq-item">
+<summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0; cursor: pointer; list-style: none"><span class="d faq-q" style="font-size: 20px; font-weight: 600; letter-spacing: -0.01em; color: #141a18">What does Tokkenly AI do?</span><span style="flex: none; display: inline-flex; width: 36px; height: 36px; border-radius: 999px; background: #f3f6f4; color: #12805f; align-items: center; justify-content: center"><svg class="faq-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></summary>
+<p class="body" style="margin: 0; padding: 0 56px 24px 0; font-size: 17px">It answers questions about your own account in everyday words. It is read-only and can never move your money.</p>
+</details><details class="faq-item">
+<summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0; cursor: pointer; list-style: none"><span class="d faq-q" style="font-size: 20px; font-weight: 600; letter-spacing: -0.01em; color: #141a18">What is the minimum to start?</span><span style="flex: none; display: inline-flex; width: 36px; height: 36px; border-radius: 999px; background: #f3f6f4; color: #12805f; align-items: center; justify-content: center"><svg class="faq-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg></span></summary>
+<p class="body" style="margin: 0; padding: 0 56px 24px 0; font-size: 17px">You can start with $1.</p>
+</details>
+</div>
+</div>
+</section>
+
 <!-- ===== Closing ===== -->
 <section class="sec">
 <div class="wrap">
